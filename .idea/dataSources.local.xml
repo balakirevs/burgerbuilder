@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails rails-react-app: development" uuid="f2bd7a61-a711-4f35-82ed-4b7b343f284d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails rails-react-app: production" uuid="83387ee0-bc62-4afe-be74-b9e9253176fc">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>rails-react-app</user-name>
+    </data-source>
+    <data-source name="Rails rails-react-app: test" uuid="0406566e-3bf1-4489-af01-e9974e74b9e1">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
+  </component>
+</project>
