@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##### Create rails react webpacker monolith application :
 
-Things you may want to cover:
+```bash
+rails new app-name --webpack=react --database=postgresql -T
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##### Run application
+```bash
+bundle
+rails db:create
+rails db:migrate
+rails db:seed
+foreman start
+```
