@@ -6,6 +6,10 @@
 rails new app-name --webpack=react --database=postgresql -T
 ```
 
+##### Styles options:
+* webpack 3 css modules usage (className={classes.cssClass})
+* in rails assets add css class and use as following (className='cssClass')
+
 ##### Run application
 ```bash
 bundle

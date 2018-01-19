@@ -19,4 +19,12 @@
 .byebug_history
 /public/packs
 /public/packs-test
-/node_modules
+
+# Ignore other unneeded files.
+*.swp
+.project
+.idea
+.rvmrc
+.ruby-*
+.secret
+.zeus.sock
