@@ -17,6 +17,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'foreman'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.7'
+  gem 'shoulda-matchers'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
