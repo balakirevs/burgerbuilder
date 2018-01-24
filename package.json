@@ -1,5 +1,5 @@
 {
-  "name": "rails-react-app",
+  "name": "burgerbuilder",
   "private": true,
   "dependencies": {
     "@rails/webpacker": "^3.2.0",
@@ -31,6 +31,7 @@
     "rails-erb-loader": "^5.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "resolve-url-loader": "^2.2.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
