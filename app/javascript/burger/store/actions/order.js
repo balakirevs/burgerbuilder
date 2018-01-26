@@ -41,3 +41,39 @@ export const purchaseInit = () => {
     type: actionTypes.PURCHASE_INIT
   }
 };
+
+export const fetchOrdersSuccess = (orders) => {
+  return {
+    type: actionTypes.FETCH_ORDERS_SUCCESS,
+    orders: orders
+  }
+};
+
+export const fetchOrdersFailure = (error) => {
+  return {
+    type: actionTypes.FETCH_ORDERS_FAILURE,
+    error: error
+  }
+};
+
+export const fetchOrdersStart = () => {
+  return {
+    type: actionTypes.FETCH_ORDERS_START
+  }
+};
+
+export const fetchOrders = () => {
+  return dispatch => {
+    dispatch(fetchOrdersStart());
+    axios.get('https://burger-builder-3ed20.firebaseio.com/orders.json')
+      .then(response => {
+        const fetchedOrders = [];
+        for (let key in response.data) {
+          fetchedOrders.push({...response.data[key], id: key});
+        }
+        dispatch(fetchOrdersSuccess(fetchedOrders));
+      }).catch(error => {
+      dispatch(fetchOrdersFailure(error));
+    });
+  }
+};
