@@ -62,10 +62,11 @@ export const fetchOrdersStart = () => {
   }
 };
 
-export const fetchOrders = (token) => {
+export const fetchOrders = (token, userId) => {
   return dispatch => {
     dispatch(fetchOrdersStart());
-    axios.get('https://burger-builder-3ed20.firebaseio.com/orders.json?auth=' + token)
+    const queryParams = '?auth=' + token + '&orderBy="userId"&equalTo="' + userId + '"';  // query for firebase api
+    axios.get('https://burger-builder-3ed20.firebaseio.com/orders.json' + queryParams)
       .then(response => {
         const fetchedOrders = [];
         for (let key in response.data) {
