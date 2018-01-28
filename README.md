@@ -20,3 +20,9 @@ rails db:migrate
 rails db:seed
 foreman start
 ```
+
+##### Run tests
+```bash
+rspec
+yarn test
+```
