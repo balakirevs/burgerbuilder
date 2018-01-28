@@ -22,7 +22,7 @@ const asyncAuth = asyncComponent(() => {
 class App extends Component {
 
   componentDidMount () {
-    this.props.onTryAutoSignup();
+    this.props.onTryAutoSignUp();
   }
 
   render () {
@@ -65,7 +65,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onTryAutoSignup: () => dispatch(actions.authCheckState())
+    onTryAutoSignUp: () => dispatch(actions.authCheckState())
   }
 };
 
