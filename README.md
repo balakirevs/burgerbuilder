@@ -26,3 +26,6 @@ foreman start
 rspec
 yarn test
 ```
+
+TODO
+* repalce firebase backend to rails
